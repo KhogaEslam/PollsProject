@@ -1,0 +1,13 @@
+<table border ='1'>
+  <thead>
+    <th>Question</th>
+    <th>Publishing Date</th>>
+  </thead>
+      {% for quest in allQuestions %}
+      <tr>
+        <td>{{quest.qText}}</td>
+        <td>{{quest.pubDate}}</td>
+        <td><a href="{{quest.id}}/details">details</td>
+      </tr>
+    {% endfor %}
+</table>
